@@ -12,4 +12,4 @@ test set of 100 games and validation set of 100 games. The challenge set compris
 every 25 seconds. Each label is further marked as visible and non-visible. We have used the features provided.
 
 # Report
-Please refer to Action_Spotting_Report.pdf for details.
+Please refer to Action_Spotting_Report.pdf and Action_Spotting_Presentation for details.
