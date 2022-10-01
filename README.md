@@ -14,7 +14,7 @@ every 25 seconds. Each label is further marked as visible and non-visible. We ha
 # Implementation
 The action spotting problem is 2-fold, i.e. it consists the time of the action and the category/class of the action. The proposed framework first classifies the timestamps of the actions in the entire game and then it classifies each of the timestamp. The system architecture is shown in following figure: 
 
-![Alt text](https://github.com/harshitmonish/Action-Spooting-Soccer-Videos/blob/main/architecture.png?raw=true "Model Architecture")
+![Alt text](https://github.com/harshitmonish/Action-Spooting-Soccer-Videos/blob/main/img/architecture.png?raw=true "Model Architecture")
 
 
 The predictions from the Naive Classifier are used to generate action windows. Considering the current frame as 0, t frames before and after the predicted frames are grouped together which forms the action window. t is set to 5 for this implementation. These windows are passed as an input to the level 1 Bi-GRU model. The level-1 Bi-GRU model consists 2 bidirectional GRU layers stacked on top of each other. The output of the model is a 17 node layer, giving the probability of an event using
@@ -28,7 +28,7 @@ with stacked bidirectional GRU layers. The key differences between the level-1 a
 
 # Results:
 For tight bound of 5sec our model gave mAP of 35.17 on test data and 36.71 on challenge set as shown in the Image:
-![Alt text](https://github.com/harshitmonish/Action-Spooting-Soccer-Videos/blob/main/Results.JPG?raw=true "Experimental Results") 
+![Alt text](https://github.com/harshitmonish/Action-Spooting-Soccer-Videos/blob/main/img/Results.JPG?raw=true "Experimental Results") 
 
 # Conclusion: 
 In this project we have implemented a multimodal architecture for action spotting task in soccer videos using Soccernet-v2 dataset.The experimental results shows that the proposed scheme can incorporate pre-event and post-event frames for classification task, especially for closely related events.
