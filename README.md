@@ -30,7 +30,7 @@ with stacked bidirectional GRU layers. The key differences between the level-1 a
 For tight bound of 5sec our model gave mAP of 35.17 on test data and 36.71 on challenge set as shown in the Image:
 ![Alt text](https://github.com/harshitmonish/Action-Spooting-Soccer-Videos/blob/main/Results.JPG?raw=true "Experimental Results") 
 
-Conclusion: 
+# Conclusion: 
 In this project we have implemented a multimodal architecture for action spotting task in soccer videos using Soccernet-v2 dataset.The experimental results shows that the proposed scheme can incorporate pre-event and post-event frames for classification task, especially for closely related events.
 
 # Report
